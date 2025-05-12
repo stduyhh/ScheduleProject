@@ -4,7 +4,6 @@ import com.example.scheduleproject.Schedule.dto.ScheduleRequestDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Getter
@@ -27,7 +26,7 @@ public class Schedule {
         this.description = description;
         this.startTime = startTime;
         this.endTime = endTime;
-        this.createTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(startTime);
+//        this.createTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(startTime);
     }
 
     public void createSchedule(ScheduleRequestDto scheduleRequestDto){
