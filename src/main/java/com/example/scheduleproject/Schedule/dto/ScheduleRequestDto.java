@@ -6,11 +6,8 @@ import java.util.Date;
 
 @Getter
 public class ScheduleRequestDto {
-    private long scheduleId;
-    private String userName;
+    private String name;
     private String title;
-    private String description;
     private String password;
-    private Date startTime;
-    private Date endTime;
+    private Date create_date;
 }

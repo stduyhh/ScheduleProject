@@ -1,5 +1,9 @@
 package com.example.scheduleproject.Schedule.repository;
 
-public interface ScheduleRepository {
+import com.example.scheduleproject.Schedule.entity.Schedule;
 
+public interface ScheduleRepository {
+    Schedule saveSchedule(Schedule schedule);
+
+    Schedule findById(Long id);
 }
